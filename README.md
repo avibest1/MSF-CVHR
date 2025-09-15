@@ -12,3 +12,6 @@ Multi-Scale Feature Fusion Module for fine-grained and contextual representation
 Cross-View Head Re-Identification Module that leverages both appearance and geometric similarity to reduce redundant counting across views.
 
 This design enables robust crowd counting in both single-view and multi-view settings
+
+Requirments:
+pip install -r requirements.txt
