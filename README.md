@@ -35,8 +35,10 @@ The single and cross-view crowd counting in complex scenarios remains challengin
   - Finally, the folder tree is below:
  ```
     -- ProcessedData
-		|-- NWPU
-			|-- images
+		|-- Cross-View
+        |-- Wildtrack
+	    |-- image_subsets
+            |-- C1
 			|   |-- 0001.jpg
 			|   |-- 0002.jpg
 			|   |-- ...
