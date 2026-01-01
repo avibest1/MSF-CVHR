@@ -34,30 +34,38 @@ The single and cross-view crowd counting in complex scenarios remains challengin
   
   - Finally, the folder tree is below:
  ```
-    -- ProcessedData
-		|-- Cross-View
-        |-- Wildtrack
+  -- ProcessedData
+  |-- Cross-View
+  |-- Wildtrack
 	    |-- image_subsets
-            |-- C1
-			|   |-- 0001.jpg
-			|   |-- 0002.jpg
+            |   |-- C1
+			|   |-- 00000000.png
+			|   |-- 00000005.png
 			|   |-- ...
-			|   |-- 5109.jpg
-			|-- masks
-			|   |-- 0001.png
-			|   |-- 0002.png
+			|   |-- 00002000.png
+            |   |-- C2
+			|   |-- 00000000.png
+			|   |-- 00000005.png
 			|   |-- ...
-			|   |-- 3609.png
+			|   |-- 00002000.png
+            ....................
+            ....................
+            |   |-- C7
+			|   |-- 00000000.png
+			|   |-- 00000005.png
+			|   |-- ...
+			|   |-- 00002000.png
+        |-- annotations_positions
+            |   |-- C1
+			|   |-- 00000000.json
+			|   |-- 00000005.json
+			|   |-- ...
+			|   |-- 00001995.json
 			|-- train.txt
 			|-- val.txt
 			|-- test.txt
 			|-- val_gt_loc.txt
 	-- PretrainedModels
-	  |-- hrnetv2_w48_imagenet_pretrained.pth
-	-- IIM
-	  |-- datasets
-	  |-- misc
-	  |-- ...
  ```
 
 ## Training
