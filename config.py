@@ -9,15 +9,15 @@ cfg = __C
 
 #------------------------------TRAIN------------------------
 __C.SEED = 3035  # random seed,  for reproduction
-__C.DATASET = 'WildTrack'  # dataset selection: NWPU, SHHA, SHHB, QNRF, FDST
+__C.DATASET = 'WildTrack'  # dataset selection: Widtrack,MVOR,MutiviewX, ShanghaiTech_A, ShanghaiTech_B 
 
 
-__C.NET = 'MSFFNET' #  optional ['MSFFNET', 'VGG16_FPN']
+__C.NET = 'MSF-CVHR' #  optional ['MSF-CVHR', 'VGG16_FPN']
 
-__C.PRE_HR_WEIGHTS = '../PretrainedModels/MSFFNet_imagenet_pretrained.pth'
+__C.PRE_HR_WEIGHTS = '../PretrainedModels/MSF-CHR_imagenet_pretrained.pth'
 
 __C.RESUME = False  # contine training
-__C.RESUME_PATH = './exp/12-28_16-21_JHU-CROWD++_MSFFNET/latest_state.pth'
+__C.RESUME_PATH = './exp/12-28_16-21_Wildtrack_MSF-CvHR/latest_state.pth'
 
 __C.GPU_ID = '2,3'  # sigle gpu: [0], [1] ...; multi gpus: [0,1]
 
@@ -31,7 +31,7 @@ __C.NUM_EPOCH_LR_DECAY = 4 # no use
 __C.LR_DECAY_START = 10 # no use 
 
 
-__C.MAX_EPOCH = 600
+__C.MAX_EPOCH = 150
 __C.PRINT_FREQ = 20
 
 now = time.strftime("%m-%d_%H-%M", time.localtime())
