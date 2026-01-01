@@ -70,7 +70,7 @@ The single and cross-view crowd counting in complex scenarios remains challengin
 
 ## Training
 
-python train.py \
+python train.py 
 
      --img 400 \
      --batch 16 \
