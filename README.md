@@ -110,7 +110,7 @@ Tips: The training process takes **~50 hours** on NWPU datasets with **two TITAN
 - Modify some key parameters in ```test.py```: 
   - ```netName```.  
   -  ```model_path```.  
-- Run ```python test.py```. Then the output file (```*_*_test.txt```) will be generated, which can be directly submitted to [CrowdBenchmark](https://www.crowdbenchmark.com/nwpucrowdloc.html)
+- Run ```python test.py```. Then the output file (```*_*_test.txt```) will be generated.
 
 ## Visualization on the val set
 - Modify some key parameters in ```test.py```: 
