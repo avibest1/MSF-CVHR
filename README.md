@@ -97,7 +97,10 @@ python train.py
 
 - The cross-view estimated results on the WildTrack dataset. The first row displays synchronized crowd images with the same timestamp; the second row shows the actual ground truth; the third row presents the estimation results; and the last two rows show the BEV-plotted density maps of distinct individuals.
 
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/avibest1/MSF-CVHR/14ca06bc82c761a4c48c29a071f297d9c55c1047/figures/Figure%207.jpg" width="700"><br>
+  <em>Figure: Architecture of the proposed MSF-CVHR framework.</em>
+</p>
    
 Tips: The training process takes **~50 hours** on NWPU datasets with **two TITAN RTX (48GB Memory)**. 
 
