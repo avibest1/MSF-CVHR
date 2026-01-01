@@ -24,7 +24,6 @@ The single and cross-view crowd counting in complex scenarios remains challengin
     - Clone this repo in the directory (```Root/MSF-CVHR```):
   
 - Datasets
-   ### For Cross-View
     - Download Wildtrack dataset from this [link](https://www.epfl.ch/labs/cvlab/data/data-wildtrack/).
     - Download MVOR dataset from this [link](https://camma.unistra.fr/datasets/).
     - Download MultiviewX dataset from this [link](https://opendatalab.com/OpenDataLab/MultiviewX/explore/main).
