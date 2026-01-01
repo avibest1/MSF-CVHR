@@ -9,7 +9,7 @@ The single and cross-view crowd counting in complex scenarios remains challengin
 
 ## Model Architecture
 
-https://github.com/avibest1/MSF-CVHR/blob/6502f395987a7f9a50c326ebae28b65865f23f4e/figures/Figure%202.jpg
+![MSF-CVHR Architecture](https://raw.githubusercontent.com/avibest1/MSF-CVHR/6502f395987a7f9a50c326ebae28b65865f23f4e/figures/Figure%202.jpg)
 
 
 # Progress
