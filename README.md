@@ -99,7 +99,7 @@ python train.py
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/avibest1/MSF-CVHR/14ca06bc82c761a4c48c29a071f297d9c55c1047/figures/Figure%207.jpg" width="700"><br>
-  <em>Figure: Architecture of the proposed MSF-CVHR framework.</em>
+  <em>Figure: The cross-view estimated results on the WildTrack dataset.</em>
 </p>
    
 Tips: The training process takes **~50 hours** on NWPU datasets with **two TITAN RTX (48GB Memory)**. 
