@@ -95,8 +95,9 @@ python train.py
 
 
 
-- The sub images are the input image, GT, prediction map,localization result, and pixel-level threshold, respectively:
-   ![val_curve](./figures/vis.png)
+- The cross-view estimated results on the WildTrack dataset. The first row displays synchronized crowd images with the same timestamp; the second row shows the actual ground truth; the third row presents the estimation results; and the last two rows show the BEV-plotted density maps of distinct individuals.
+
+
    
 Tips: The training process takes **~50 hours** on NWPU datasets with **two TITAN RTX (48GB Memory)**. 
 
