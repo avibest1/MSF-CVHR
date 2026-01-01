@@ -70,24 +70,27 @@ The single and cross-view crowd counting in complex scenarios remains challengin
 
 ## Training
 - run ```python train.py```.
+                --img 400
+                --batch 16
+                --epochs 150
+                --data {dataset.location}/data.yaml  
+                --weights MSF-CVHR.pt      
+                --name MSF-CVHR_results
+                --cache
+  
 - The validtion on Wildtrack, the table is shown as follows:
-Methods	Metrics
-	AP	FPR-95	P	R	ACC	IPAA-100	IPAA-90	IPAA-80
-OSNET [46]
-16.81	92.08	28.27	29.67	37.55	0.0	0.48	3.21
-MvMHAT [47]
-4.45	94.13	5.97	6.28	22.37	0.0	0.48	1.55
-OSNET+ESC [48]
-59.53	15.33	78.12	79.08	82.12	26.43	39.40	66.68
-GNN_CCA [49]
-4.13	93.30	-	0.0	36.82	0.0	2.14	14.41
-ASNet [50]
-73.40	8.30	-	-	-	32.10	-	-
-ViT-P3DE [51]  
-70.45	5.83	86.91	87.01	89.48	35.48	53.10	84.17
-MVA [52]
-56.68	11.18	92.31	94.34	91.73	54.64	65.60	86.55
-MSF-CVHR (ours)	65.4	6.24	93.12	94.82	90.84	54.62	68.30	87.36
+
+| Methods              | AP   | FPR-95 | P     | R     | ACC   | IPAA-100 | IPAA-90 | IPAA-80 |
+|----------------------|------|--------|-------|-------|-------|----------|----------|----------|
+| OSNET [46]           | 16.81| 92.08  | 28.27 | 29.67 | 37.55 | 0.00     | 0.48     | 3.21     |
+| MvMHAT [47]          | 4.45 | 94.13  | 5.97  | 6.28  | 22.37 | 0.00     | 0.48     | 1.55     |
+| OSNET+ESC [48]       | 59.53| 15.33  | 78.12 | 79.08 | 82.12 | 26.43    | 39.40    | 66.68    |
+| GNN_CCA [49]         | 4.13 | 93.30  | –     | 0.00  | 36.82 | 0.00     | 2.14     | 14.41    |
+| ASNet [50]           | 73.40| 8.30   | –     | –     | –     | 32.10    | –        | –        |
+| ViT-P3DE [51]        | 70.45| 5.83   | 86.91 | 87.01 | 89.48 | 35.48    | 53.10    | 84.17    |
+| MVA [52]             | 56.68| 11.18  | 92.31 | 94.34 | 91.73 | 54.64    | 65.60    | 86.55    |
+| **MSF-CVHR (Ours)**  | **65.40**| **6.24** | **93.12** | **94.82** | **90.84** | **54.62** | **68.30** | **87.36** |
+
 
 
 - The sub images are the input image, GT, prediction map,localization result, and pixel-level threshold, respectively:
