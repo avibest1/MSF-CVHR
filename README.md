@@ -38,7 +38,7 @@ The single and cross-view crowd counting in complex scenarios remains challengin
   |-- Cross-View
   |-- Wildtrack
 	 |-- image_subsets
-       |   |-- C1
+            |   |-- C1
 			|   |-- 00000000.png
 			|   |-- 00000005.png
 			|   |-- ...
@@ -50,13 +50,13 @@ The single and cross-view crowd counting in complex scenarios remains challengin
 			|   |-- 00002000.png
             ....................
             ....................
-       |   |-- C7
+            |   |-- C7
 			|   |-- 00000000.png
 			|   |-- 00000005.png
 			|   |-- ...
 			|   |-- 00002000.png
+
      |-- annotations_positions
-            |   |-- C1
 			|   |-- 00000000.json
 			|   |-- 00000005.json
 			|   |-- ...
