@@ -30,7 +30,7 @@ The single and cross-view crowd counting in complex scenarios remains challengin
     - Unzip ```*zip``` files in turns and place ```datasets*``` into the folder (```dataset_prepare/Cross-View```). 
 
  
-    - If you want to reproduce the results on Shanghai Tech Part A/B , UCF-QNRF, and JHU datasets, you can follow the instructions in [DATA.md](datasets/dataset_prepare/DATA.md) to setup the datasets.
+    - If you want to reproduce the results on Shanghai Tech Part A/B , UCF-QNRF, UCF_CC_50 and JHU-Crowd++ datasets for single view, Just place datasets into the folder (```dataset_prepare/Single-View```)   
   
   - Finally, the folder tree is below:
  ```
