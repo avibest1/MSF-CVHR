@@ -69,14 +69,15 @@ The single and cross-view crowd counting in complex scenarios remains challengin
  ```
 
 ## Training
-- run ```python train.py```.
-                --img 400
-                --batch 16
-                --epochs 150
-                --data {dataset.location}/data.yaml  
-                --weights MSF-CVHR.pt      
-                --name MSF-CVHR_results
-                --cache
+
+python train.py \
+  --img 400 \
+  --batch 16 \
+  --epochs 150 \
+  --data {dataset.location}/data.yaml \
+  --weights MSF-CVHR.pt \
+  --name MSF-CVHR_results \
+  --cache
   
 - The validtion on Wildtrack, the table is shown as follows:
 
