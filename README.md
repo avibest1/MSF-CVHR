@@ -14,29 +14,15 @@ The single and cross-view crowd counting in complex scenarios remains challengin
   <em>Figure: Architecture of the proposed MSF-CVHR framework.</em>
 </p>
 
-
-# Progress
-- [x] Testing Code (2020.12.10)
-- [x] Training Code 
-  - [x] NWPU (2020.12.14)
-  - [x] JHU (2021.01.05)
-  - [x] UCF-QNRF (2020.12.30)
-  - [x] ShanghaiTech Part A/B (2020.12.29)
-  - [x] FDST (2020.12.30)
-- [x] scale information for UCF-QNRF and ShanghaiTech Part A/B (2021.01.07)
-
-
 # Getting Started
-
-
 ## Preparation
 -  Prerequisites
-    - Python 3.7
-    - Pytorch 1.6: http://pytorch.org .
+    - Python ≥ 3.7
+    - PyTorch ≥ 1.6
     - other libs in ```requirements.txt```, run ```pip install -r requirements.txt```.
 -  Code
-    - Clone this repo in the directory (```Root/IIM```):
-    - Download the pre-trained HR models from this [link](https://onedrive.live.com/?authkey=%21AKvqI6pBZlifgJk&cid=F7FD0B7F26543CEB&id=F7FD0B7F26543CEB%21116&parId=F7FD0B7F26543CEB%21105&action=locate). More details are availble at [HRNet-Semantic-Segmentation](https://github.com/HRNet/HRNet-Semantic-Segmentation) and  [HRNet-Image-Classification](https://github.com/HRNet/HRNet-Image-Classification).
+    - Clone this repo in the directory (```Root/MSF-CVHR```):
+  
  
 - Datasets
  
