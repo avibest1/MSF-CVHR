@@ -65,7 +65,7 @@ The single and cross-view crowd counting in complex scenarios remains challengin
 			|-- val.txt
 			|-- test.txt
 			|-- val_gt_loc.txt
-	-- PretrainedModels
+
  ```
 
 ## Training
