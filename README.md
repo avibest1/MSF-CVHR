@@ -80,31 +80,8 @@ python train.py
      --name MSF-CVHR_results \
      --cache
   
-- The validtion on Wildtrack, the table is shown as follows:
 
-| Methods              | AP   | FPR-95 | P     | R     | ACC   | IPAA-100 | IPAA-90 | IPAA-80 |
-|----------------------|------|--------|-------|-------|-------|----------|----------|----------|
-| OSNET                | 16.81| 92.08  | 28.27 | 29.67 | 37.55 | 0.00     | 0.48     | 3.21     |
-| MvMHAT               | 4.45 | 94.13  | 5.97  | 6.28  | 22.37 | 0.00     | 0.48     | 1.55     |
-| OSNET+ESC            | 59.53| 15.33  | 78.12 | 79.08 | 82.12 | 26.43    | 39.40    | 66.68    |
-| GNN_CCA              | 4.13 | 93.30  | –     | 0.00  | 36.82 | 0.00     | 2.14     | 14.41    |
-| ASNet                | 73.40| 8.30   | –     | –     | –     | 32.10    | –        | –        |
-| ViT-P3DE             | 70.45| 5.83   | 86.91 | 87.01 | 89.48 | 35.48    | 53.10    | 84.17    |
-| MVA                  | 56.68| 11.18  | 92.31 | 94.34 | 91.73 | 54.64    | 65.60    | 86.55    |
-| **MSF-CVHR (Ours)**  | **65.40**| **6.24** | **93.12** | **94.82** | **90.84** | **54.62** | **68.30** | **87.36** |
-
-
-
-- The cross-view estimated results on the WildTrack dataset. The first row displays synchronized crowd images with the same timestamp; the second row shows the actual ground truth; the third row presents the estimation results; and the last two rows show the BEV-plotted density maps of distinct individuals.
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/avibest1/MSF-CVHR/14ca06bc82c761a4c48c29a071f297d9c55c1047/figures/Figure%207.jpg" width="700"><br>
-  <em>Figure: The cross-view estimated results on the WildTrack dataset.</em>
-</p>
    
-Tips: The training process takes **~50 hours** on NWPU datasets with **two TITAN RTX (48GB Memory)**. 
-
-
 ## Testing and Submitting
 
 - Modify some key parameters in ```test.py```: 
@@ -124,55 +101,30 @@ Tips: The training process takes **~50 hours** on NWPU datasets with **two TITAN
 
 # Performance
 
-The results (F1, Pre., Rec. under the `sigma_l`) and [pre-trained models](https://mailnwpueducn-my.sharepoint.com/:f:/g/personal/gjy3035_mail_nwpu_edu_cn/EliCeOckaZVBgez6n8ZWvr4BNdwPauFJgbm88MGhHid25w?e=rtogwc) on NWPU val set, UCF-QNRF, SHT A, SHT B, and FDST:
+- The validtion on Wildtrack, the table is shown as follows:
 
-|   Method   |  NWPU val  |  UCF-QNRF  |  SHT A  | 
-|------------|-------|-------|--------|
-| Paper:  VGG+FPN [2,3]| 77.0/80.2/74.1 | **68.8**/78.2/61.5 | **72.5**/72.6/72.5 | 
-| This Repo's Reproduction:  VGG+FPN [2,3]| **77.1**/82.5/72.3| 67.8/75.7/61.5 | 71.6/75.9/67.8 |  
-| Paper:  HRNet [1]   | **80.2**/84.1/76.6| **72.0**/79.3/65.9 |  73.9/79.8/68.7  | 
-| This Repo's Reproduction:  HRNet [1]   | 79.8/83.4/76.5 |  **72.0**/78.7/66.4  | **76.1**/79.1/73.3 |
+| Methods              | AP   | FPR-95 | P     | R     | ACC   | IPAA-100 | IPAA-90 | IPAA-80 |
+|----------------------|------|--------|-------|-------|-------|----------|----------|----------|
+| OSNET                | 16.81| 92.08  | 28.27 | 29.67 | 37.55 | 0.00     | 0.48     | 3.21     |
+| MvMHAT               | 4.45 | 94.13  | 5.97  | 6.28  | 22.37 | 0.00     | 0.48     | 1.55     |
+| OSNET+ESC            | 59.53| 15.33  | 78.12 | 79.08 | 82.12 | 26.43    | 39.40    | 66.68    |
+| GNN_CCA              | 4.13 | 93.30  | –     | 0.00  | 36.82 | 0.00     | 2.14     | 14.41    |
+| ASNet                | 73.40| 8.30   | –     | –     | –     | 32.10    | –        | –        |
+| ViT-P3DE             | 70.45| 5.83   | 86.91 | 87.01 | 89.48 | 35.48    | 53.10    | 84.17    |
+| MVA                  | 56.68| 11.18  | 92.31 | 94.34 | 91.73 | 54.64    | 65.60    | 86.55    |
+| **MSF-CVHR (Ours)**  | **65.40**| **6.24** | **93.12** | **94.82** | **90.84** | **54.62** | **68.30** | **87.36** |
 
-|   Method   |  SHT B  |  FDST |  JHU  |
-|------------|---------|-------|-------|
-| Paper:  VGG+FPN [2,3]|   80.2/84.9/76.0  | 93.1/92.7/93.5 | - |
-| This Repo's Reproduction:  VGG+FPN [2,3] |  **81.7**/88.5/75.9 | **93.9**/94.7/93.1| 61.8/73.2/53.5 |
-| Paper:  HRNet [1]   | **86.2**/90.7/82.1  |  95.5/95.3/95.8  | 62.5/74.0/54.2 |
-| This Repo's Reproduction:  HRNet [1]   | 86.0/91.5/81.0 | **95.7**/96.9 /94.4 | **64.0**/73.3/56.8 |
 
-**References**
-1. Deep High-Resolution Representation Learning for Visual Recognition, T-PAMI, 2019.
-2. Very Deep Convolutional Networks for Large-scale Image Recognition, arXiv, 2014.
-3. Feature Pyramid Networks for Object Detection, CVPR, 2017. 
+- The cross-view estimated results on the WildTrack dataset. The first row displays synchronized crowd images with the same timestamp; the second row shows the actual ground truth; the third row presents the estimation results; and the last two rows show the BEV-plotted density maps of distinct individuals.
 
-About the leaderboard on the test set, please visit [Crowd benchmark](https://www.crowdbenchmark.com/nwpucrowdloc.html).  Our submissions are the [IIM(HRNet)](https://www.crowdbenchmark.com/resultldetail.html?rid=11) and [IIM (VGG16)](https://www.crowdbenchmark.com/resultldetail.html?rid=10).
+<p align="center">
+  <img src="https://raw.githubusercontent.com/avibest1/MSF-CVHR/14ca06bc82c761a4c48c29a071f297d9c55c1047/figures/Figure%207.jpg" width="700"><br>
+  <em>Figure: The cross-view estimated results on the WildTrack dataset.</em>
+</p>
 
 
 
-# Video Demo
 
-We test the pretrained HR Net model on the NWPU dataset in a real-world subway scene. Please visit [bilibili](https://www.bilibili.com/video/BV1K541157MK) or [YouTube](https://www.youtube.com/watch?v=GqOMgjUkbsI) to watch the video demonstration.
-![val_curve](./figures/vid.png)
-# Citation
-If you find this project is useful for your research, please cite:
-```
-@article{gao2020learning,
-  title={Learning Independent Instance Maps for Crowd Localization},
-  author={Gao, Junyu and Han, Tao and Yuan, Yuan and Wang, Qi},
-  journal={arXiv preprint arXiv:2012.04164},
-  year={2020}
-}
-```
 
-Our code borrows a lot from the C^3 Framework, and you may cite:
-```
-@article{gao2019c,
-  title={C$^3$ Framework: An Open-source PyTorch Code for Crowd Counting},
-  author={Gao, Junyu and Lin, Wei and Zhao, Bin and Wang, Dong and Gao, Chenyu and Wen, Jun},
-  journal={arXiv preprint arXiv:1907.02724},
-  year={2019}
-}
-```
-If you use pre-trained models in this repo (HR Net, VGG, and FPN), please cite them. 
 
 
