@@ -23,12 +23,13 @@ The single and cross-view crowd counting in complex scenarios remains challengin
 -  Code
     - Clone this repo in the directory (```Root/MSF-CVHR```):
   
- 
 - Datasets
- 
-    - Download NWPU-Crowd dataset from this [link](https://www.crowdbenchmark.com/nwpucrowd.html). 
-    - Unzip ```*zip``` files in turns and place ```images_part*``` into the same folder (```Root/ProcessedData/NWPU/images```). 
-    - Download the processing labels and val gt file from this _[link](https://mailnwpueducn-my.sharepoint.com/:f:/g/personal/gjy3035_mail_nwpu_edu_cn/EliCeOckaZVBgez6n8ZWvr4BNdwPauFJgbm88MGhHid25w?e=rtogwc)_. Place them into ```Root/ProcessedData/NWPU/masks``` and ```Root/ProcessedData/NWPU```, respectively.
+   ### For Cross-View
+    - Download Wildtrack dataset from this [link](https://www.epfl.ch/labs/cvlab/data/data-wildtrack/).
+    - Download MVOR dataset from this [link](https://camma.unistra.fr/datasets/).
+    - Download MultiviewX dataset from this [link](https://opendatalab.com/OpenDataLab/MultiviewX/explore/main).
+    - Unzip ```*zip``` files in turns and place ```datasets*``` into the folder (```dataset_prepare/Cross-View```). 
+
  
     - If you want to reproduce the results on Shanghai Tech Part A/B , UCF-QNRF, and JHU datasets, you can follow the instructions in [DATA.md](datasets/dataset_prepare/DATA.md) to setup the datasets.
   
